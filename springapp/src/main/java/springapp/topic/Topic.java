@@ -13,6 +13,10 @@ public class Topic {
 		this.name = name;
 		this.desccription = desccription;
 	}
+	public Topic() {
+		// super();
+		// TODO Auto-generated constructor stub
+	}
 	public String getName() {
 		return name;
 	}
