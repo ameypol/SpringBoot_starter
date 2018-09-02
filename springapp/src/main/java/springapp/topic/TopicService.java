@@ -29,4 +29,21 @@ public class TopicService {
 	{
 		topics.add(topic);
 	}
+
+	public void updateTopic(Topic topic, String id) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < topics.size();) {
+			Topic t = topics.get(i);
+			if(t.getId().equals(id))
+			topics.set(i, topic);
+			return;
+		}
+	}
+
+	public void deleteTopic(String id) {
+		// TODO Auto-generated method stub
+	topics.removeIf(t -> t.getId().equals(id));
+	
+	}
+	
 }
